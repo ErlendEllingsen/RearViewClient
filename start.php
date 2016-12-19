@@ -1,4 +1,5 @@
 <?php
-    $res = exec('forever start /home/pi/work/nodescript/RearViewController/app.js');
-    var_dump($res);
+    $arr = [];
+    $res = exec('forever start /home/pi/work/nodescript/RearViewController/app.js', $output);
+    var_dump($arr);
 ?>
