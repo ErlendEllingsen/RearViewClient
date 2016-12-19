@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="jquery.js"></script>
+        <script>
+            
+        $(document).ready(function(){
+            setInterval(function(){
+                $('#camera_view').attr('src', 'fetch.php?' + Date.now());
+            }, 500);
+        }); 
+
+        </script>
+
+    </head>
+    <body>
+        <img id="camera_view" src="" alt="">
+    </body>
+</html>
